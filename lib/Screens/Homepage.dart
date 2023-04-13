@@ -13,11 +13,11 @@ class Homepage extends StatelessWidget {
     return Scaffold(
       body: ListView(
         children: [
-          HomeAppBar(),
+          const HomeAppBar(),
           Container(
             // height: 500,
-            padding: EdgeInsets.only(top: 15),
-            decoration: BoxDecoration(
+            padding: const EdgeInsets.only(top: 15),
+            decoration: const BoxDecoration(
                 color: Color(0xFFEDECF2),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(35),
@@ -26,8 +26,8 @@ class Homepage extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.symmetric(horizontal: 15),
-                  padding: EdgeInsets.symmetric(horizontal: 15),
+                  margin: const EdgeInsets.symmetric(horizontal: 15),
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
                   height: 50,
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -36,18 +36,18 @@ class Homepage extends StatelessWidget {
                   child: Row(
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 5),
+                        margin: const EdgeInsets.only(left: 5),
                         height: 50,
                         width: 200,
                         child: TextFormField(
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                             border: InputBorder.none,
                             hintText: "Search Here....",
                           ),
                         ),
                       ),
-                      Spacer(),
-                      Icon(
+                      const Spacer(),
+                      const Icon(
                         Icons.camera_alt,
                         size: 27,
                         color: Color(0xFF4C53A5),
@@ -57,7 +57,7 @@ class Homepage extends StatelessWidget {
                 ),
                 Container(
                   alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                  margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
                   child: const Text(
                     "Categories",
                     style: TextStyle(
@@ -67,11 +67,11 @@ class Homepage extends StatelessWidget {
                     ),
                   ),
                 ),
-                CategoriesWidget(),
+                const CategoriesWidget(),
                 Container(
                   alignment: Alignment.centerLeft,
-                  margin: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
-                  child: Text(
+                  margin: const EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+                  child: const Text(
                     "Best Selling",
                     style: TextStyle(
                       fontSize: 25,
@@ -80,7 +80,7 @@ class Homepage extends StatelessWidget {
                     ),
                   ),
                 ),
-                ItemsWidget(),
+                const ItemsWidget(),
               ],
             ),
           ),
@@ -89,9 +89,9 @@ class Homepage extends StatelessWidget {
       bottomNavigationBar: CurvedNavigationBar(
           backgroundColor: Colors.transparent,
           onTap: (index) {},
-          color: Color(0xFF4C53A5),
+          color: const Color(0xFF4C53A5),
           height: 70,
-          items: [
+          items: const [
             Icon(
               Icons.home,
               size: 30,

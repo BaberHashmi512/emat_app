@@ -23,8 +23,8 @@ class ItemBottomNavBar extends StatelessWidget {
             ]),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children:  [
-            Text(
+          children: [
+            const Text(
               "\$120",
               style: TextStyle(
                 fontSize: 25,
@@ -33,22 +33,23 @@ class ItemBottomNavBar extends StatelessWidget {
               ),
             ),
             ElevatedButton.icon(
-                onPressed:(){},
-                icon: Icon(CupertinoIcons.cart_badge_plus),
-                label: Text("Add to Cart", style: TextStyle(
+              onPressed: () {},
+              icon: const Icon(CupertinoIcons.cart_badge_plus),
+              label: const Text(
+                "Add to Cart",
+                style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
-                ),),
+                ),
+              ),
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Color(0xFF4C53A5)),
+                backgroundColor: MaterialStateProperty.all(const Color(0xFF4C53A5)),
                 padding: MaterialStateProperty.all(
-                  EdgeInsets.symmetric(vertical: 13,horizontal: 15),
+                  const EdgeInsets.symmetric(vertical: 13, horizontal: 15),
                 ),
                 shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                  RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30)
-                  )
-                ),
+                    RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(30))),
               ),
             ),
           ],

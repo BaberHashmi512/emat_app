@@ -16,8 +16,8 @@ class _CategoriesWidgetState extends State<CategoriesWidget> {
         children: [
           for (int i = 1; i < 8; i++)
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 10),
-              padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
+              margin: const EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 10),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(20),
@@ -30,7 +30,7 @@ class _CategoriesWidgetState extends State<CategoriesWidget> {
                     height: 40,
                     width: 40,
                   ),
-                  Text(
+                  const Text(
                     "Shoes",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,

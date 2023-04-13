@@ -79,7 +79,7 @@ class ItemPage extends StatelessWidget {
                           Row(
                             children: [
                               Container(
-                                padding: EdgeInsets.all(5),
+                                padding: const EdgeInsets.all(5),
                                 decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(20),
@@ -91,13 +91,13 @@ class ItemPage extends StatelessWidget {
                                         offset: Offset(0, 3),
                                       )
                                     ]),
-                                child: Icon(
+                                child: const Icon(
                                   CupertinoIcons.minus,
                                   size: 18,
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.symmetric(horizontal: 10),
+                                margin: const EdgeInsets.symmetric(horizontal: 10),
                                 child: const Text(
                                   "01",
                                   style: TextStyle(
@@ -107,7 +107,7 @@ class ItemPage extends StatelessWidget {
                                 ),
                               ),
                               Container(
-                                padding: EdgeInsets.all(5),
+                                padding: const EdgeInsets.all(5),
                                 decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(20),
@@ -116,7 +116,7 @@ class ItemPage extends StatelessWidget {
                                         color: Colors.grey.withOpacity(0.5),
                                         spreadRadius: 3,
                                         blurRadius: 10,
-                                        offset: Offset(0, 3),
+                                        offset: const Offset(0, 3),
                                       )
                                     ]),
                                 child: const Icon(
@@ -143,14 +143,14 @@ class ItemPage extends StatelessWidget {
                       padding: EdgeInsets.symmetric(vertical: 8),
                       child: Row(
                         children: [
-                          Text(
+                          const Text(
                             "Size:",
                             style: TextStyle(
                                 fontSize: 18,
                                 color: Color(0xFF4C53A5),
                                 fontWeight: FontWeight.bold),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Row(
@@ -160,7 +160,7 @@ class ItemPage extends StatelessWidget {
                                   height: 30,
                                   width: 30,
                                   alignment: Alignment.center,
-                                  margin: EdgeInsets.symmetric(horizontal: 5),
+                                  margin: const EdgeInsets.symmetric(horizontal: 5),
                                   decoration: BoxDecoration(
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(30),
@@ -172,7 +172,7 @@ class ItemPage extends StatelessWidget {
                                       ]),
                                   child: Text(
                                     i.toString(),
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                         fontSize: 18,
                                         fontWeight: FontWeight.bold,
                                         color: Color(0xFF4C53A5)),
@@ -184,17 +184,17 @@ class ItemPage extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.symmetric(vertical: 8),
+                      padding: const EdgeInsets.symmetric(vertical: 8),
                       child: Row(
                         children: [
-                          Text(
+                          const Text(
                             "Colors:",
                             style: TextStyle(
                                 fontSize: 18,
                                 color: Color(0xFF4C53A5),
                                 fontWeight: FontWeight.bold),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Row(
@@ -204,7 +204,7 @@ class ItemPage extends StatelessWidget {
                                   height: 30,
                                   width: 30,
                                   alignment: Alignment.center,
-                                  margin: EdgeInsets.symmetric(horizontal: 5),
+                                  margin: const EdgeInsets.symmetric(horizontal: 5),
                                   decoration: BoxDecoration(
                                       color: Clrs[i],
                                       borderRadius: BorderRadius.circular(30),
@@ -227,8 +227,7 @@ class ItemPage extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: ItemBottomNavBar(),
-
+      bottomNavigationBar: const ItemBottomNavBar(),
     );
   }
 }

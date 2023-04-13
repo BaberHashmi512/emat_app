@@ -19,7 +19,7 @@ class _CartBottomNavBarState extends State<CartBottomNavBar> {
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children: const [
                 Text(
                   "Total:",
                   style: TextStyle(
@@ -46,7 +46,7 @@ class _CartBottomNavBarState extends State<CartBottomNavBar> {
                 color: Color(0xFF4C53A5),
                 borderRadius: BorderRadius.circular(20),
               ),
-              child: Text(
+              child: const Text(
                 "Check Out",
                 style: TextStyle(
                   fontSize: 18,
