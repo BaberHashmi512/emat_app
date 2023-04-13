@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:badges/badges.dart' as badges;
 
 class HomeAppBar extends StatelessWidget {
   const HomeAppBar({Key? key}) : super(key: key);
@@ -10,7 +11,7 @@ class HomeAppBar extends StatelessWidget {
       color: Colors.white,
       padding: EdgeInsets.all(25),
       child: Row(
-        children: [
+        children:  [
           Icon(
             Icons.sort,
             size: 30,
@@ -28,8 +29,8 @@ class HomeAppBar extends StatelessWidget {
             ),
           ),
           Spacer(),
-          Badge(
-            badgeStyle: BadgeStyle(
+          badges.Badge(
+            badgeStyle: badges.BadgeStyle(
               badgeColor: Colors.red,
               padding: EdgeInsets.all(7),
             ),
